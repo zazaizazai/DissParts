@@ -1,0 +1,677 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass elsarticle
+\begin_preamble
+%%
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%%
+%%
+%%
+%% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
+%%
+%%
+
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+
+%\journal{Nuclear Physics B}
+\end_preamble
+\options preprint,3p
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection
+Finite Element Method
+\end_layout
+
+\begin_layout Subsubsection
+Basic principle of finite element method
+\end_layout
+
+\begin_layout Standard
+The finite element method (FEM) is a numerical method for the approximate
+ solution of problems which are described by differential equations.
+ The practical use of FEM began in the 1950s in construction specially in
+ the aerospace and car industry.
+ The technique is based on the fact that the calculation area will be divided
+ into simple sub-areas, the finite elements.
+ Due to their simple geometry, their physical behavior can be calculated
+ well with known shape function.
+ This shape functions contain parameters that have a physical meaning at
+ a certain point in component and time.
+ The accuracy of the approximate solution can be improved by using more
+ parameters, that means smaller elements or using approach functions of
+ a higher grades.
+ The physical behavior of the entire body is realized through the transition
+ from one element to the next
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nikishkov_2004"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Procedure of the FEM
+\end_layout
+
+\begin_layout Enumerate
+Discretion the calculation domain: The first step is to divide a solution
+ region into finite elements.
+\end_layout
+
+\begin_layout Enumerate
+Select interpolation functions (shape functions): The second step is to
+ choose the interpolation function to interpolate the field variables over
+ the element.
+\end_layout
+
+\begin_layout Enumerate
+Define the element properties: Set the matrix matrix equation for the finite
+ elements, which relates the nodal values of the unknown function to other
+ parameters.
+ There for the most convenient method the is the Galerkin method.
+\end_layout
+
+\begin_layout Enumerate
+Assemble the element equations: It should combine local equations for all
+ elements which are used for discretization and the boundary conditions
+ will be also considered.
+\end_layout
+
+\begin_layout Enumerate
+Solve the global equation system: It is a system of linear equations with
+ a symmetric matrix.
+ For the solution direct or iterative methods can be used to find the unknown
+ parameters.
+\end_layout
+
+\begin_layout Subsubsection
+Illustration of the method using an example
+\end_layout
+
+\begin_layout Standard
+It It is considered a simple one-dimensional example to explain the finite
+ element formulation using Galerkin method.
+ This is about the principle of using FEM to solve differential equations
+ with boundary conditions, the extension to higher dimensions is similar
+ and can be found in the literature
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bathe2016"
+literal "false"
+
+\end_inset
+
+.
+ The following differential equation is given
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a\frac{d^{2}u}{dx^{2}}+b=0,\,\,\,\,\,0\leq x\leq2L
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with Dirichlet and Neuman boundary condition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & u\mid_{x=0}=0\\
+ & a\frac{du}{dx}\mid_{x=2L}=q\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The domain is one-dimensional and consists of two linear elements and three
+ nodes Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:One-dimensional"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Fig1.PNG
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:One-dimensional"
+
+\end_inset
+
+One-dimensional case with two linear elements and an interpolation of a
+ function for the domain
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nikishkov_2004"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The approach taken is that the solution can be approximated in this way
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & u_{h}\approx u=\underset{i}{\sum N_{i}u_{i}=N_{1}u_{1}+N_{2}u_{2}=\left[N\right]\left\{ u\right\} }\\
+ & \left[N\right]=\left[\begin{array}{cc}
+N_{1} & N_{2}\end{array}\right]\nonumber \\
+ & \left\{ u\right\} =\left\{ \begin{array}{cc}
+u_{1} & u_{2}\end{array}\right\} \nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+are the shape function and are developed using the Lagrangian interpolation
+ polynomial
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & N_{1}=\frac{x-x_{2}}{x_{1}-x_{2}}\\
+ & N_{2}=\frac{x-x_{1}}{x_{2}-x_{1}}.\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting this into the equation gives us an error called the residual
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a\frac{d^{2}}{dx^{2}}\left[N\right]\left\{ u\right\} +b=R.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To minimize the error we use the weighted residuals method and in the case
+ of Galerkin method for weighting 
+\begin_inset Formula $w$
+\end_inset
+
+ bis also the shape function used
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int_{\varOmega}w(x)R(x)dx=\int_{x1}^{x2}\left[N\right]^{T}a\frac{d^{2}}{dx^{2}}\left[N\right]\left\{ u\right\} dx+\int_{x1}^{x2}\left[N\right]^{T}bdx=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here is the problem that the second derivative of the linear function vanishes
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\frac{d^{2}}{dx^{2}}\left[N\right]=0.$
+\end_inset
+
+ The remedy is partial integration, which leads to a weak formulation of
+ the equation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int_{x1}^{x2}\left[\frac{dN}{dx}\right]^{T}a\left[\frac{dN}{dx}\right]dx\left\{ u\right\} -\int_{x1}^{x2}\left[N\right]^{T}bdx-\left\{ \begin{array}{c}
+0\\
+1
+\end{array}\right\} a\frac{du}{dx}\mid_{x=x2}+\left\{ \begin{array}{c}
+1\\
+0
+\end{array}\right\} a\frac{du}{dx}\mid_{x=x1}=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The whole equation can now be summarized more briefly in matrix and vector
+ form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & \left[K\right]\left\{ u\right\} =\left\{ f\right\} \\
+ & \left[K\right]=\int_{x1}^{x2}\left[\frac{dN}{dx}\right]^{T}a\left[\frac{dN}{dx}\right]dx\nonumber \\
+ & \left\{ f\right\} =\int_{x1}^{x2}\left[N\right]^{T}bdx+\left\{ \begin{array}{c}
+0\\
+1
+\end{array}\right\} a\frac{du}{dx}\mid_{x=x2}-\left\{ \begin{array}{c}
+1\\
+0
+\end{array}\right\} a\frac{du}{dx}\mid_{x=x1}.\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In mechanics, 
+\begin_inset Formula $K$
+\end_inset
+
+ means the stiffness matrix, 
+\begin_inset Formula $u$
+\end_inset
+
+ is the displacement vector and 
+\begin_inset Formula $f$
+\end_inset
+
+ is the force vector, these terms have become established in FEM.
+\end_layout
+
+\begin_layout Standard
+For a domain with two elements of length L we get the following matrix and
+ vector equations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & \left[K_{1}\right]=\left[K_{2}\right]=\frac{a}{L}\left[\begin{array}{cc}
+1 & -1\\
+-1 & 1
+\end{array}\right]\\
+ & \left\{ f_{1}\right\} =\frac{bL}{2}\left\{ \begin{array}{c}
+1\\
+1
+\end{array}\right\} ,\,\,\,\left\{ f_{2}\right\} =\frac{bL}{2}\left\{ \begin{array}{c}
+1\\
+1
+\end{array}\right\} +\left\{ \begin{array}{c}
+0\\
+q
+\end{array}\right\} .\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This two element equation will be assembled because of interact of the elements
+ in node number 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[K\right]\left\{ u\right\} =\left[\begin{array}{ccc}
+k_{1} & -k_{1} & 0\\
+-k_{1} & k_{1}+k_{2} & k_{2}\\
+ & -k_{2} & k_{2}
+\end{array}\right]\left\{ \begin{array}{c}
+u_{1}\\
+u_{2}\\
+u_{3}
+\end{array}\right\} =\frac{a}{L}\left[\begin{array}{ccc}
+1 & -1 & 0\\
+-1 & 2 & -1\\
+0 & -1 & 1
+\end{array}\right]\left\{ \begin{array}{c}
+u_{1}\\
+u_{2}\\
+u_{3}
+\end{array}\right\} =\left\{ \begin{array}{c}
+f_{11}\\
+f_{12}+f_{21}\\
+f_{22}
+\end{array}\right\} =\frac{bL}{2}\left\{ \begin{array}{c}
+1\\
+2\\
+1
+\end{array}\right\} +\left\{ \begin{array}{c}
+0\\
+0\\
+q
+\end{array}\right\} 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider the boundary condition the final appearance equation system is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{a}{L}\left[\begin{array}{ccc}
+1 & 0 & 0\\
+0 & 2 & -1\\
+0 & -1 & 1
+\end{array}\right]\left\{ \begin{array}{c}
+u_{1}\\
+u_{2}\\
+u_{3}
+\end{array}\right\} =\frac{bL}{2}\left\{ \begin{array}{c}
+0\\
+2\\
+1
+\end{array}\right\} +\left\{ \begin{array}{c}
+0\\
+0\\
+q
+\end{array}\right\} .
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The exact solution and the approximate solution are shown in Fig[] for the
+ Parameters 
+\begin_inset Formula $a=b=q=L=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Fig2.PNG
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison between analytical and numerical solution
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nikishkov_2004"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All these steps are realized for the models in this work in Comsol Multiphysics.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibtex-daten/bachelorarbeit-info"
+options "bibtex-daten/unsrtdin"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

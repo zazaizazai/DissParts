@@ -1,0 +1,468 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass elsarticle
+\begin_preamble
+%%
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%%
+%%
+%%
+%% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
+%%
+%%
+
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+
+%\journal{Nuclear Physics B}
+\end_preamble
+\options preprint,3p
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Identification of fuel cells and electromagnetic reverberations chambers
+\end_layout
+
+\begin_layout Section
+Fuel cell
+\end_layout
+
+\begin_layout Subsection
+Fuel cell technology use
+\end_layout
+
+\begin_layout Standard
+Fuel cells belong to the group of galvanic elements, which, as electrochemical
+ energy converters, can convert the chemical energy of a fuel into electrical
+ energy.
+ Since fuel cells can generate electricity directly from chemical energy,
+ they are much more efficient than internal combustion engines 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kurzweil2016"
+literal "false"
+
+\end_inset
+
+.
+ The principle of the fuel cell was discovered in 1838 by Christian Friedrich
+ Schönbein and soon after, Sir William Grove, along with Schönbein, recognized
+ the reversal of electrolysis and power generation.
+ With the invention of the electrical generator by Werner von Siemens, the
+ invention known as the "gas battery" fell into oblivion.
+ It wasn't until the 1950s that the idea was revived due to the need for
+ compact and portable power sources in space travel and the military.
+ Global warming and air pollution gave research into this technology decisive
+ impetus that continues to this day.
+\end_layout
+
+\begin_layout Subsection
+Principle of operation
+\end_layout
+
+\begin_layout Standard
+A fuel cell consists of a cathode, anode coated with catalysts such as platinum
+ or nickel and a membrane Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Basic-structure-and"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/reactionin fuel cellbearb.1.jpg
+	lyxscale 50
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Basic-structure-and"
+
+\end_inset
+
+Basic structure and functioning of a fuel cell 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "prezi.com"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The anode is supplied with hydrogen 
+\begin_inset Formula $\left[\textrm{\mathsf{\textrm{H}}}_{2}\right]$
+\end_inset
+
+, which oxidizes to protons 
+\begin_inset Formula $\left[2\mathsf{\textrm{H}}^{+}\right]$
+\end_inset
+
+ on the catalyst layer, giving off electrons 
+\begin_inset Formula $\left[2\textrm{e}^{-}\right]$
+\end_inset
+
+.
+ The proton exchange membran (PEM) is only permeable for ions, so only the
+ ions flow to the cathode via PEM.
+ The electrons flow from the anode to the cathode via an external circuit
+ and form the electric current.
+ Both hydrogen protons and electrons migrate to the cathode, where they
+ react with the supplied oxygen 
+\begin_inset Formula $\left[\textrm{O}_{2}\right]$
+\end_inset
+
+ to form water 
+\begin_inset Formula $\left[\textrm{H}_{2}\textrm{O}\right]$
+\end_inset
+
+.
+ Depending on the operating point, a single cell delivers a certain voltage
+ between 0.5 and 1.0 volts.
+ For higher voltages, individual cells are connected in series and a so-called
+ stack is obtained as the core element of the fuel cell.
+\end_layout
+
+\begin_layout Subsection
+Types of fuel cells
+\end_layout
+
+\begin_layout Standard
+There are different types of fuel cells, which differ in the electrolyte
+ used, in the operating temperature, in the fuels that can be used and in
+ the power range and thus the areas of application Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Different-fuel-cell"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/fctypes.png
+	lyxscale 70
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Different-fuel-cell"
+
+\end_inset
+
+Different fuel cell types 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Panayiotou2010"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+AFC are among the earliest researched fuel cell types and were mainly used
+ in space travel deployed.
+ Operating efficiency: about 60% to 70%.
+ Proton Exchange membrane fuel cells (PEMFC) use membrane foil called Nafion
+ and Electrodes with platinum layers as catalysts.
+ They are powered by hydrogen or finely purified reformate from simple hydrocarb
+ons such as natural gas, LPG or alcohols.
+ These cells are used in home power supplies, power plants, submarines and
+ space travel and have an efficiency of 40-60%.
+ Direct methanol fuel cells (DMFC) are operated with liquid methanol and
+ a membrane foil is used as the electrolyte.
+ Due to the low power density, these cells are mainly used as battery chargers.
+ Molten carbonate fuel cells (MCFC) have a molten carbonate electrolyte.
+ Because of the operating temperature of approx.
+ 650°C and the resulting high reaction speeds, therefore no expensive noble
+ metal catalysts are required.
+ They are operated with desulfurized natural and coal gas or suitably cleaned
+ biogas.
+ MCFC systems are developed for the power plant range from 200 kW to several
+ MW and have an efficiency of 50% to 65%.
+ Solid oxide fuel cells (SOFC) are operated with a solid ceramic metal oxide
+ as the electrolyte.
+ The operating temperature of 800°C enable that no expensive noble metal
+ catalysts are required.
+ These cells can be operated with fossil gases or biogas.
+ SOFC systems are developed in the power range from 1 kW to 200 kW and have
+ an efficiency of 60-65% 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schaloske2012energietrager"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Challenges and solutions
+\end_layout
+
+\begin_layout Standard
+The fuel technology is mature in many areas and in regular operation.
+ In particular, passenger cars, forklifts and micro combined heat and power
+ plants (CHP) for residential buildings are among the mature applications
+ and are already commercially available, followed by buses, emergency generators
+, industrial CHP plants and various network services.
+ However, there are many possible ones Hydrogen and fuel applications Cells
+ where no comparable experiences have been made so far and which are still
+ in the research and development phase.
+ These include, for example Trains, waste disposal vehicles and delivery
+ vehicles, but also heavy duty trucks as well airplanes and ships.
+ The challenge for the use of the technology also remains in terms of infrastruc
+ture as well as expanding the filling stations for hydrogen.
+ In addition to the infrastructure The further development of the production
+ facilities is a challenge, especially in the transition to serial production.
+ For this reason Know-how transfer is essential for the market ramp-up,
+ to reduce existing reservations and gaps in knowledge 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weichenhain2020potenziale"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Electromagnetic reverberations chambers
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibtex-daten/bachelorarbeit-info"
+options "unsrtdin"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

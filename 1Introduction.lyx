@@ -1,0 +1,260 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass elsarticle
+\begin_preamble
+%%
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%%
+%%
+%%
+%% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
+%%
+%%
+
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+
+%\journal{Nuclear Physics B}
+\end_preamble
+\options preprint,3p
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Introduction
+\end_layout
+
+\begin_layout Standard
+Global warming and air pollution is one of the main problems facing mankind.
+ The main reason for this is the dependence on fossil energy, which is neither
+ sustainable nor environmentally friendly.
+ Fuel cell technologies represent one of the most promising technological
+ advances to contain the situation.
+ In addition to producing clean energy, fuel cells have the advantage of
+ being transportable.
+ Meanwhile, fuel cells are used in many applications, for example in supporting
+ facilities, vehicles and electronic systems.
+ In order to improve cell operational performance, the analysis of operational
+ parameters is required and these parameters are also of central importance
+ in the dimensions of the cell.
+ A three-dimensional high temperature proton exchange membrane fuel cell
+ (HT-PEMFC) with polybenzimidazole (PBI) membrane model developed in Comsol
+ Multiphysics by the group Ubong et al.
+ as part of a publication 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ubong2009"
+literal "false"
+
+\end_inset
+
+ is used for the simulation in this work.
+\begin_inset Newline newline
+\end_inset
+
+Next, this thesis deals with an electromagnetic reverberation chamber (ERC).
+ An electromagnetic reverberation chamber serves as an ideally isolated
+ environment where a device under test (DUT) is subjected to electromagnetic
+ waves in order to closely observe the effects.
+ The field for the chamber is generated by a Vivaldi antenna, which in turn
+ stimulates so-called modes by multiple reflections of electrical waves
+ on metal walls.
+ The transmit antenna also irradiates a rotatable metal reflector structure
+ (Stirrer) in the chamber, which swirls the modes and creates a spatially
+ limited, homogeneous electric field in the chamber.
+ The geometry of the stirrer and, furthermore, the quantity of stirrers
+ is decisive for how well the field is distributed homogeneously.
+ Another way to influence the field distribution is to attach geometric
+ objects to the chamber wall, which has been done to a limited extent by
+ the group Selemani et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Selemani2015"
+literal "false"
+
+\end_inset
+
+.
+ Cases such as the stirrer geometry, the number of stirrers in the chamber
+ and the attachment of geometric objects to the chamber walls are examined
+ in order to obtain the best possible solution.
+ When selecting the antenna frequency, the formula from Hans Georg Krauthäuser's
+ habilitation thesis is taken into account.
+ To be on the safe side when choosing the frequency, three times this limit
+ frequency is used 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "https://doi.org/10.25673/4794"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Whether finding the operating parameters for the fuel cell for a given performan
+ce or choosing the right geometry for a better field distribution in the
+ chamber, these are all optimization problems from a mathematical point
+ of view.
+ One can select these desired boundary condition as a prompt and solve it
+ numerically with an algorithm.
+ The genetic algorithms in Matlab, which is connected to Comsol Multiphysics
+ via an interface, is used for the optimization.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibtex-daten/bachelorarbeit-info"
+options "unsrtdin"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

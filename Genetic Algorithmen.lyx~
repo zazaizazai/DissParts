@@ -1,0 +1,736 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass elsarticle
+\begin_preamble
+%%
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%%
+%%
+%%
+%% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
+%%
+%%
+
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+
+%\journal{Nuclear Physics B}
+\end_preamble
+\options preprint,3p
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Genetic Algorithms
+\end_layout
+
+\begin_layout Subsection
+Historical Context and Basics
+\end_layout
+
+\begin_layout Standard
+Genetic algorithms (GA) are machine learning models and optimization methods
+ motivated by the evolutionary processes in nature and so the vocabulary
+ was adopted from genetics.
+ In this method, learning is understood as competition between evolved species
+ in a population, and this makes the algorithms directed probability algorithms
+ and thus much more efficient than random search algorithms.
+ GAs were ﬁrst proposed by John Holland in the 1960s and further developed
+ by his students and colleagues at the University of Michigan in the 1960s
+ and 1970s 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "holland1975adaptation"
+literal "false"
+
+\end_inset
+
+.
+ Genetic algorithms are useful for many types of complex optimization tasks
+ well suited:
+\end_layout
+
+\begin_layout Itemize
+No fundamental limitations regarding the function to be optimized, such
+ as continuity, derivability, etc.
+\end_layout
+
+\begin_layout Itemize
+Particularly suitable for problems with a very large search space where
+ an optimal search by listing all possible solutions is no longer possible.
+\end_layout
+
+\begin_layout Itemize
+The global extremum is sought and not just the nearest local extremum.
+\end_layout
+
+\begin_layout Itemize
+Genetic algorithms can be efficiently implemented on parallel computing
+ structures.
+\end_layout
+
+\begin_layout Standard
+One of the weaknesses of the algorithm is that finding the optimal solution
+ cannot be guaranteed.
+ More information on this topic can be found in the literature 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fogel1997evolutionary"
+literal "false"
+
+\end_inset
+
+.
+ Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Basic-Genetic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the basic structure of a GA.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $t\leftarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Generate population 
+\begin_inset Formula $P\left(t\right)$
+\end_inset
+
+ randomly
+\end_layout
+
+\begin_layout Plain Layout
+evaluate fitness for 
+\begin_inset Formula $P\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+while
+\series default
+ ( 
+\series bold
+not
+\series default
+ termination condition )
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+do
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $t\leftarrow t+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+create new population 
+\begin_inset Formula $P\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+select
+\end_layout
+
+\begin_layout Plain Layout
+recombine
+\end_layout
+
+\begin_layout Plain Layout
+mutate
+\end_layout
+
+\begin_layout Plain Layout
+evaluate fitness for
+\begin_inset Formula $\left(P\left(t\right)\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+end while
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Basic-Genetic"
+
+\end_inset
+
+Basic Genetic Algorithm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Buttelmann2004"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+The GA starts with a randomly generated population (a set of chromosomes)
+ and the fitness is evaluated by the fitness function.
+ Evolutionary it means that the fittest in the population survive and mathematic
+ally the fitness function is the function that is trying to optimize the
+ solution.
+ While the termination condition is not achieved, the GA performs a fitness
+ based selection, recombination and mutation process to create a succeeding
+ population and subsequently the next generation.
+ During recombination, parent chromosomes are selected and their genetic
+ material is recombined to produce child chromosomes.
+ These then advance into the next population.
+ As this process is repeated, a sequence of successive generations develops
+ and the average fitness of the chromosomes tends to increase until the
+ termination criterion is reached.
+\end_layout
+
+\begin_layout Subsection
+The detailed structure
+\end_layout
+
+\begin_layout Standard
+A GA consists of a number of different components.
+ This is a special strength because it means that standard components can
+ be reused in many different GAs with trivial customization, thus easing
+ implementation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mccall2005genetic"
+literal "false"
+
+\end_inset
+
+.
+ The vocabulary for genetic algorithms was taken from genetics.
+\end_layout
+
+\begin_layout Subsubsection
+Population
+\end_layout
+
+\begin_layout Standard
+In order to use a genetic algorithm, a solution space must first be specified.
+ From the solution space an initial population is randomly generated which
+ is a set of individuals or chromosomes.
+ At this stage one can apply heuristics to give the algorithm a better starting
+ position.
+ A chromosome represents a point in the search space and consists of genes
+ that represent the elements of a solution 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Population-gen"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The number of genes represents a measure of the size of a solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Genetic-Algorithm-Illustrated.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Population-gen"
+
+\end_inset
+
+Population construction in GA 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kindsonthegenius_2020"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Fitness and Objective Function
+\end_layout
+
+\begin_layout Standard
+The fitness function of an individual 
+\begin_inset Formula $f\left(i_{k}\right)$
+\end_inset
+
+ in a population 
+\begin_inset Formula $P=\left\{ i_{1},i_{2},...,i_{n}\right\} $
+\end_inset
+
+ gives the probability whether that individual can survive and thus pass
+ on their genes.
+ Since the fitness function is a positive real number, it is obtained by
+ scaling from the objective function 
+\begin_inset Formula $f(i)=scale(o(i))$
+\end_inset
+
+, which corresponds to the optimization goal of the optimization problem.
+\end_layout
+
+\begin_layout Subsubsection
+Selection
+\end_layout
+
+\begin_layout Subsubsection
+Crossover
+\end_layout
+
+\begin_layout Standard
+The crossover operator allows mixing of genetic material from selected initial
+ chromosomes to create offspring chromosomes.
+ After selecting two parent chromosomes for recombination, a random number
+ is generated in the interval 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ with uniform probability and compared with a predetermined "crossover rate".
+ If the random number is greater than the crossover rate, no crossover occurs
+ and one or both parents will proceed unchanged to the next level or recombinati
+on.
+ If the crossover rate is greater than or equal to the random number, the
+ crossover operator is applied Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Uniform-crossover-for"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ There are many other ways to perform the crossover, see the following literatur
+e 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hasanebi2000"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Example-of-parameterized.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Uniform-crossover-for"
+
+\end_inset
+
+Uniform crossover for crossover rate of 
+\begin_inset Formula $0.5$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "article1"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Mutation
+\end_layout
+
+\begin_layout Standard
+The mutation operator works much like the crossover operator Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mutation-in-gene"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ It changes the genes values with less probability 
+\begin_inset Formula $p_{\textrm{m}}$
+\end_inset
+
+ and so the solution in smaller step 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Buttelmann2004"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+Before the mutation:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Chromosome one: 
+\begin_inset Formula $\left[\begin{array}{ccccccccccc}
+4 & 50 & 10 & 7 & 9 & 60 & 7 & 600 & 0.9 & 3 & 340\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+After the mutation:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Chromosome one: 
+\begin_inset Formula $\left[\begin{array}{ccccccccccc}
+4 & 90 & 10 & 7 & 9 & 60 & 7 & 1000 & 0.9 & 3 & 340\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mutation-in-gene"
+
+\end_inset
+
+Mutation in gene number 2 and 8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+The idea is not to get stuck in local minima but , through this method,
+ to reach the global minima.The chosen values for the mutation probability
+ pm are usually 0.01 or 0.001.
+ Some sources 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "muhlenbein1992genetic"
+literal "false"
+
+\end_inset
+
+ prefer the chromosome length 
+\begin_inset Formula $L$
+\end_inset
+
+ depended mutation probability as the optimal probability 
+\begin_inset Formula $p_{\textrm{mopt}}=1/L$
+\end_inset
+
+, which is used for this implementation.
+\end_layout
+
+\begin_layout Subsubsection
+Termination
+\end_layout
+
+\begin_layout Standard
+For the termination of GA there is a criterion needed.
+ Therefore there are several possibilities like time constraints 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kramer2017genetic"
+literal "false"
+
+\end_inset
+
+ or the consideration of convergence.
+ Another popular variant used for this implementation is a certain number
+ of generations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibtex-daten/bachelorarbeit-info"
+options "bibtex-daten/unsrtdin"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
