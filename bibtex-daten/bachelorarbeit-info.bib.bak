@@ -230,4 +230,18 @@
   year    = {2020},
 }
 
+@Article{shapiro1965analysis,
+  author    = {Shapiro, Samuel Sanford and Wilk, Martin B},
+  journal   = {Biometrika},
+  title     = {An analysis of variance test for normality (complete samples)},
+  year      = {1965},
+  number    = {3/4},
+  pages     = {591--611},
+  volume    = {52},
+  publisher = {JSTOR},
+}
+
+@Article{charles,
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

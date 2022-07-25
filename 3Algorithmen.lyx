@@ -1290,6 +1290,135 @@ literal "false"
  of generations.
 \end_layout
 
+\begin_layout Section
+Shapiro-Wilk test
+\end_layout
+
+\begin_layout Standard
+The Shapiro-Wilk test is a statistical significance test that tests the
+ hypothesis that the underlying population of a sample is normally distributed.
+ The test procedure was published in 1965 by American Samuel Shapiro and
+ Canadian Martin Wilk 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shapiro1965analysis"
+literal "false"
+
+\end_inset
+
+.
+ The test can be used to test samples with 3 to 5000 observations and in
+ addition to other well-known tests for normal distribution, such as such
+ as the Kolmogorow-Smirnow test or the chi-square test, the Shapiro-Wilk
+ test is characterized by its relatively large test performance, especially
+ by smaller testing samples.
+\begin_inset Newline newline
+\end_inset
+
+In the implementation, the null hypothesis 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ is first set up, which states that there is a normal distribution for a
+ sample 
+\begin_inset Formula $x_{1},...,x_{n}$
+\end_inset
+
+ and a significance level is chosen, usually 
+\begin_inset Formula $\alpha=5\%.$
+\end_inset
+
+ The critical test statistic 
+\begin_inset Formula $W_{\alpha}$
+\end_inset
+
+ for 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, which depends on sample size, is obtained from a given statistical table
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "real-statistics.com"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+For a given sample of size 
+\begin_inset Formula $n$
+\end_inset
+
+, the test statistic is calculated as follows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+W= & \frac{\left(\overset{n}{\underset{i=1}{\sum}}a_{i}x^{\left(i\right)}\right)^{2}}{\overset{n}{\underset{i=1}{\sum}}\left(x_{i}-\bar{x}\right)^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ is the Shapiro-Wilk constant given from the statistic table 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "real-statistics.com"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x^{(i)}$
+\end_inset
+
+ is the ith smallest value of the number in the sample
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ is the sample mean.
+\end_layout
+
+\begin_layout Standard
+If the value of the test statistic 
+\begin_inset Formula $W$
+\end_inset
+
+ is greater than the critical value 
+\begin_inset Formula $W_{\alpha}$
+\end_inset
+
+ 
+\begin_inset Formula $(W>W_{\alpha})$
+\end_inset
+
+ , so the null hypothesis is not rejected and a normal distribution is assumed.
+ Otherwise, the null hypothesis must be abandoned and there is no normal
+ distribution.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
