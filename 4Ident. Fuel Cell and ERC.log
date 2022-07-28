@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.13)  25 JUL 2022 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.13)  27 JUL 2022 18:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -267,11 +267,36 @@ Package natbib Warning: Citation `schaloske2012energietrager' on page 2 undefine
 Package natbib Warning: Citation `weichenhain2020potenziale' on page 2 undefined on input line 207.
 
 [2 <./images/fctypes.png>]
+
+Package natbib Warning: Citation `mendes1968new' on page 3 undefined on input line 214.
+
+
+Package natbib Warning: Citation `hill1998electromagnetic' on page 3 undefined on input line 214.
+
+
+Package natbib Warning: Citation `Serra' on page 3 undefined on input line 238.
+
+
+Package natbib Warning: Citation `crawford_koepke_2017' on page 3 undefined on input line 253.
+
+
+Package natbib Warning: Citation `Serra' on page 3 undefined on input line 265.
+
+
+Package natbib Warning: Citation `houchouas2015system' on page 3 undefined on input line 265.
+
+
+Package natbib Warning: Citation `houchouas2015system' on page 3 undefined on input line 267.
+
+
+Package natbib Warning: Citation `Selemani2015' on page 3 undefined on input line 270.
+
+[3]
 No file "4Ident. Fuel Cell and ERC".bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[3] (4Ident. Fuel Cell and ERC.aux)
+[4] (4Ident. Fuel Cell and ERC.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -280,17 +305,17 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3816 strings out of 478351
- 58458 string characters out of 2846867
- 363552 words of memory out of 3000000
- 22183 multiletter control sequences out of 15000+600000
- 478564 words of font info for 61 fonts, out of 8000000 for 9000
+ 3819 strings out of 478351
+ 58493 string characters out of 2846867
+ 365552 words of memory out of 3000000
+ 22185 multiletter control sequences out of 15000+600000
+ 478901 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,11n,76p,293b,271s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\farha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "4Ident. Fuel Cell and ERC.pdf" (3 pages, 177522 bytes).
+ <C:\Users\farha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\farha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "4Ident. Fuel Cell and ERC.pdf" (4 pages, 202251 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -113,8 +113,8 @@ energy converters, can convert the chemical energy of a fuel into
 electrical energy. Since fuel cells can generate electricity directly
 from chemical energy, they are much more efficient than internal combustion
 engines \citep{Kurzweil2016}. The principle of the fuel cell was
-discovered in 1838 by Christian Friedrich Schï¿½nbein and soon after,
-Sir William Grove, along with Schï¿½nbein, recognized the reversal of
+discovered in 1838 by Christian Friedrich Schönbein and soon after,
+Sir William Grove, along with Schönbein, recognized the reversal of
 electrolysis and power generation. With the invention of the electrical
 generator by Werner von Siemens, the invention known as the \textquotedbl gas
 battery\textquotedbl{} fell into oblivion. It wasn't until the 1950s
@@ -175,14 +175,14 @@ an efficiency of 40-60\%. Direct methanol fuel cells (DMFC) are operated
 with liquid methanol and a membrane foil is used as the electrolyte.
 Due to the low power density, these cells are mainly used as battery
 chargers. Molten carbonate fuel cells (MCFC) have a molten carbonate
-electrolyte. Because of the operating temperature of approx. 650ï¿½C
+electrolyte. Because of the operating temperature of approx. 650°C
 and the resulting high reaction speeds, therefore no expensive noble
 metal catalysts are required. They are operated with desulfurized
 natural and coal gas or suitably cleaned biogas. MCFC systems are
 developed for the power plant range from 200 kW to several MW and
 have an efficiency of 50\% to 65\%. Solid oxide fuel cells (SOFC)
 are operated with a solid ceramic metal oxide as the electrolyte.
-The operating temperature of 800ï¿½C enable that no expensive noble
+The operating temperature of 800°C enable that no expensive noble
 metal catalysts are required. These cells can be operated with fossil
 gases or biogas. SOFC systems are developed in the power range from
 1 kW to 200 kW and have an efficiency of 60-65\% \citep{schaloske2012energietrager}.
@@ -206,7 +206,70 @@ is a challenge, especially in the transition to serial production.
 For this reason Know-how transfer is essential for the market ramp-up,
 to reduce existing reservations and gaps in knowledge \citep{weichenhain2020potenziale}.
 
-\section{Electromagnetic reverberations chambers}
+\section{Electromagnetic reverberations chamber}
+
+\subsection{Application of a reverberations chamber}
+
+Electromagnetic reverberations chambers (ERCs, alternatively mode
+stirred chambers, MSC) was first proposed in 1968 \citep{mendes1968new}\citep{hill1998electromagnetic}
+and they are used for various electromagnetic compatibility (EMC)
+test procedures, e.g. immunity test, radiated emissions or screening
+effectiveness tests. MSCs consist of a electromagnetic cavity resonator
+fed by an RF source. Inside any electromagnetic cavity resonator both
+electric and magnetic field are spatially arranged in so called resonant
+modes based on standing waves. Additionally, an asymmetric metal piece,
+the so-called mode stirrer, is mounted in a wall of the resonator,
+which can be turned to modify the boundary conditions for the electric
+field.
+
+Resonators which are operated at a frequency at which a sufficiently
+large number of resonant modes are excited are called overmoded. In
+the case of an overmoded reverberation chambers equipped with a moving
+mode-stirrer, it has been demonstrated that the statistic of the field
+amplitude is supposed to be uniform in the working volume. Using a
+mode-stirring object, the main objective is to produce a statistically
+uniform electromagnetic field in the sense of homogeneity (uniformity
+with regard to the location - spatial uniformity) and isotropy (uniformity
+with regard to the orientation - polarization uniformity) of the field.
+The latest properties are directly linked to the number of significantly
+excited modes, the quality factor Q, often estimated as a composite
+quality factor, which quantifies the amount of energy stored in the
+reverberation chamber, their bandwidth $BW_{q}=f/Q$ and finally the
+stirring efficiency $S_{e}$. More details can be found in \citep{Serra}.
+
+A DUT placed inside the working volume of a functioning chamber is
+exposed to an electromagnetic field with constant magnitude and normally
+distributed angle of incidence and polarization plane.
+
+ERCs became one of the focuses of research in the electromagnetic
+compatibility community some 15 years, and many investigations did
+show that the ERC enables the characterization of electronic devices
+in a statistically evaluated electromagnetic field which exists in
+a subvolume of the resonator's interior, the so called test volume.
+Subject to random variables, the description of a stochastic exposure
+requires the modeling of physical phenomena related to the electromagnetic
+source and the physical properties of the device under test (DUT).
+One of the test environment, which allows the simulation of stochastic
+process, is the Electromagnetic Reverberation Chamber (ERC) \citep{crawford_koepke_2017}.
+It's development was inspired from autistic reverberation chambers
+which are used for sound tests.
+
+During the design process of a reverberation chamber, the size of
+the test volume will be defined so that the lowest usable frequency
+(LUF), the lowest frequency at which the resonator is overmoded) cover
+the frequency band of interest for the susceptibility evaluation and
+that the working volume can host the device under test taking into
+account a minimal distance between the device under test and the walls
+at a quarter of the longest wavelength. Many studies have been dealing
+with the ideal and efficient way to create the required uniform and
+isotope fields . Readers can refer to \citep{Serra} and to \citep{houchouas2015system}
+regarding mechanical mode-stirrers comparison. The validation of the
+test environment is defined in \citep{houchouas2015system}. Interestingly,
+later studies have leveraged the use of chaotic processes in fixed
+environments to improve the mechanical stirring approach (hybrid techniques)
+in order to obtain an efficient test environment \citep{Selemani2015}.
+
+\subsection{Technical challenges}
 
 \bibliographystyle{unsrtdin}
 \bibliography{bibtex-daten/bachelorarbeit-info}

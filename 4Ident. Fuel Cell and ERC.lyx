@@ -445,7 +445,158 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-Electromagnetic reverberations chambers
+Electromagnetic reverberations chamber
+\end_layout
+
+\begin_layout Subsection
+Application of a reverberations chamber
+\end_layout
+
+\begin_layout Standard
+Electromagnetic reverberations chambers (ERCs, alternatively mode stirred
+ chambers, MSC) was first proposed in 1968 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mendes1968new"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hill1998electromagnetic"
+literal "false"
+
+\end_inset
+
+ and they are used for various electromagnetic compatibility (EMC) test
+ procedures, e.g.
+ immunity test, radiated emissions or screening effectiveness tests.
+ MSCs consist of a electromagnetic cavity resonator fed by an RF source.
+ Inside any electromagnetic cavity resonator both electric and magnetic
+ field are spatially arranged in so called resonant modes based on standing
+ waves.
+ Additionally, an asymmetric metal piece, the so-called mode stirrer, is
+ mounted in a wall of the resonator, which can be turned to modify the boundary
+ conditions for the electric field.
+\end_layout
+
+\begin_layout Standard
+Resonators which are operated at a frequency at which a sufficiently large
+ number of resonant modes are excited are called overmoded.
+ In the case of an overmoded reverberation chambers equipped with a moving
+ mode-stirrer, it has been demonstrated that the statistic of the field
+ amplitude is supposed to be uniform in the working volume.
+ Using a mode-stirring object, the main objective is to produce a statistically
+ uniform electromagnetic field in the sense of homogeneity (uniformity with
+ regard to the location - spatial uniformity) and isotropy (uniformity with
+ regard to the orientation - polarization uniformity) of the field.
+ The latest properties are directly linked to the number of significantly
+ excited modes, the quality factor 
+\begin_inset Formula $Q$
+\end_inset
+
+, often estimated as a composite quality factor, which quantifies the amount
+ of energy stored in the reverberation chamber, their bandwidth 
+\begin_inset Formula $BW_{q}=f/Q$
+\end_inset
+
+ and finally the stirring efficiency 
+\begin_inset Formula $S_{e}$
+\end_inset
+
+.
+ More details can be found in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Serra"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A DUT placed inside the working volume of a functioning chamber is exposed
+ to an electromagnetic field with constant magnitude and normally distributed
+ angle of incidence and polarization plane.
+\end_layout
+
+\begin_layout Standard
+ERCs became one of the focuses of research in the electromagnetic compatibility
+ community some 15 years, and many investigations did show that the ERC
+ enables the characterization of electronic devices in a statistically evaluated
+ electromagnetic field which exists in a subvolume of the resonator's interior,
+ the so called test volume.
+ Subject to random variables, the description of a stochastic exposure requires
+ the modeling of physical phenomena related to the electromagnetic source
+ and the physical properties of the device under test (DUT).
+ One of the test environment, which allows the simulation of stochastic
+ process, is the Electromagnetic Reverberation Chamber (ERC) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "crawford_koepke_2017"
+literal "false"
+
+\end_inset
+
+.
+ It's development was inspired from autistic reverberation chambers which
+ are used for sound tests.
+\end_layout
+
+\begin_layout Standard
+During the design process of a reverberation chamber, the size of the test
+ volume will be defined so that the lowest usable frequency (LUF), the lowest
+ frequency at which the resonator is overmoded) cover the frequency band
+ of interest for the susceptibility evaluation and that the working volume
+ can host the device under test taking into account a minimal distance between
+ the device under test and the walls at a quarter of the longest wavelength.
+ Many studies have been dealing with the ideal and efficient way to create
+ the required uniform and isotope fields .
+ Readers can refer to 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Serra"
+literal "false"
+
+\end_inset
+
+ and to 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "houchouas2015system"
+literal "false"
+
+\end_inset
+
+ regarding mechanical mode-stirrers comparison.
+ The validation of the test environment is defined in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "houchouas2015system"
+literal "false"
+
+\end_inset
+
+.
+ Interestingly, later studies have leveraged the use of chaotic processes
+ in fixed environments to improve the mechanical stirring approach (hybrid
+ techniques) in order to obtain an efficient test environment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Selemani2015"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Technical challenges
 \end_layout
 
 \begin_layout Standard
