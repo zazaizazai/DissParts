@@ -519,6 +519,53 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/An-illustration-of-a-reverberation-chamber.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An illustration of a reverberation chamber, antenna and stirrers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "article"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 A DUT placed inside the working volume of a functioning chamber is exposed
  to an electromagnetic field with constant magnitude and normally distributed
  angle of incidence and polarization plane.

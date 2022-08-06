@@ -417,6 +417,7 @@ literal "false"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2479,8 +2480,8 @@ noprefix "false"
 
 \end_inset
 
- shows the plot of average cell power density for different geometry parameters
- like cell width 
+ shows the plot of average cell power density depending on the required
+ voltage for different geometry parameters like cell width 
 \begin_inset Formula $\left[W\right]$
 \end_inset
 
@@ -3395,7 +3396,9 @@ where
 
  represents various points on the average cell power density curve where
  the simulated and desired average cell power density are compared and evaluated.
- The number of points is chosen as N = 21.
+ The number of points is chosen as N = 21 that means that the output power
+ is evaluated for 21 different required output voltages.
+ .
 \end_layout
 
 \begin_layout Subsection
@@ -3407,7 +3410,7 @@ The GA are implemented in Matlab and thus the initial population is created.
  The values of the parameters are transmitted to Comsol via Livelink, an
  interface between Matlab and Comsol.
  With these values, Comsol simulates the model of the fuel cell and determines
- the cell current for dierent voltages.
+ the cell current for dierent voltages using finite element method.
  Matlab get the data through Livelink and calculate the power curve.
  This is compared with the indicated desired power curve and new values
  for the parameters are calculated through GA.
@@ -3764,8 +3767,7 @@ noprefix "false"
 
  shows a close up view of the stirrer and specifies the angle of the stirrer
  wings, the distances of the wings, and the length and width of the stirrer.
- Significant parameters this paper will be concerned with are distances
- 
+ Significant parameters this work will be concerned with are distances 
 \begin_inset Formula $tr_{1}y_{1}$
 \end_inset
 
@@ -6568,6 +6570,11 @@ mm
 
 \begin_layout Subsection
 Variation of the stirrer shape and quantity in an ERC
+\end_layout
+
+\begin_layout Standard
+As mentioned in the previous chapter, both the shape and the number of stirrers
+ are crucial to achieve a statistically uniform and isotropic field.
 \end_layout
 
 \begin_layout Subsection

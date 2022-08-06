@@ -271,9 +271,6 @@
   year   = {1998},
 }
 
-@Article{,
-}
-
 @Misc{crawford_koepke_2017,
   author    = {Crawford, M. L. and Koepke, Galen H.},
   title     = {Design, Evaluation, and Use of a Reverberation Chamber for Performing Electromagnetic Susceptibility/Vulnerability Measurements},
@@ -282,9 +279,6 @@
   journal   = {UNT Digital Library},
   publisher = {United States. Government Printing Office.},
   url       = {https://digital.library.unt.edu/ark:/67531/metadc502595/},
-}
-
-@Article{,
 }
 
 @Article{houchouas2015system,
@@ -303,9 +297,6 @@
   pages   = {21--33},
 }
 
-@Article{,
-}
-
 @Article{Serra,
   author  = {R. {Serra} and A. C. {Marvin} and F. {Moglie} and V. M. {Primiani} and A. {Cozza} and L. R. {Arnaut} and Y. {Huang} and M. O. {Hatfield} and M. {Klingler} and F. {Leferink}},
   title   = {Reverberation chambers a la carte: An overview of the different mode-stirring techniques},
@@ -315,6 +306,20 @@
   number  = {1},
   pages   = {63-78},
   doi     = {10.1109/MEMC.2017.7931986},
+}
+
+@Article{,
+}
+
+@article{article,
+author = {Zhao, Huapeng},
+year = {2013},
+month = {10},
+pages = {299-308},
+title = {MLFMM-Accelerated Integral-Equation Modeling of Reverberation Chambers [Open Problems in CEM]},
+volume = {55},
+journal = {Antennas and Propagation Magazine, IEEE},
+doi = {10.1109/MAP.2013.6735541}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

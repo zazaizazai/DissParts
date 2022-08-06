@@ -519,6 +519,45 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/An-illustration-of-a-reverberation-chamber.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 A DUT placed inside the working volume of a functioning chamber is exposed
  to an electromagnetic field with constant magnitude and normally distributed
  angle of incidence and polarization plane.
@@ -613,8 +652,8 @@ In an ERC it is desirable that the DUT is evenly irradiated from all sides.
  Interesting objects of investigation are geometric shapes attached to the
  walls, which specify irregular boundary conditions for the field and the
  shape and number of stirrers that swirl the field.
- These aspects ensure a homogeneous field quality and this work tries to
- answer this question.
+ These aspects ensure a homogeneous field quality and consisted of many
+ works.
 \end_layout
 
 \begin_layout Standard
