@@ -6455,7 +6455,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../OneDrive/Desktop/Paper_MVK2_ShapeOpt11.04/pics/Pics_ShapeOptPaper/ConeXdirection.pdf
+	filename images/ConeXdirection.pdf
 	lyxscale 50
 	scale 28
 	BoundingBox 0bp 0bp 540bp 425bp
@@ -6464,7 +6464,7 @@ status open
 
 
 \begin_inset Graphics
-	filename ../../../../OneDrive/Desktop/Paper_MVK2_ShapeOpt11.04/pics/Pics_ShapeOptPaper/ConeYdirection.pdf
+	filename images/ConeYdirection.pdf
 	lyxscale 50
 	scale 28
 	BoundingBox 0bp 0bp 540bp 425bp
@@ -6473,7 +6473,7 @@ status open
 
 
 \begin_inset Graphics
-	filename ../../../../OneDrive/Desktop/Paper_MVK2_ShapeOpt11.04/pics/Pics_ShapeOptPaper/ConeZdirection.pdf
+	filename images/ConeZdirection.pdf
 	lyxscale 50
 	scale 28
 	BoundingBox 0bp 0bp 540bp 425bp

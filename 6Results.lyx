@@ -7245,5 +7245,60 @@ The P-values serve to emphasize the contrast of both geometries and, thus,
  These optimizations are considered in the following chapter.
 \end_layout
 
+\begin_layout Section
+Technical implementation
+\end_layout
+
+\begin_layout Standard
+The GA are implemented in Matlab and thus the initial population is created.
+ The values of the parameters are transmitted to Comsol via Livelink, an
+ interface between Matlab and Comsol.
+ With these values, Comsol simulates the model of the fuel cell and determines
+ the cell current for dierent voltages using finite element method.
+ Matlab get the data through Livelink and calculate the power curve.
+ This is compared with the indicated desired power curve and new values
+ for the parameters are calculated through GA.
+ Finally, the parameters are transmitted to Comsol again and the loop runs
+ until the termination criteria are reached.
+\end_layout
+
+\begin_layout Standard
+\align left
+The calculation time of the implementation is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+T_{imp}=n_{I}*n_{G}*T_{sim}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $n_{P}$
+\end_inset
+
+ is the number of individuals, 
+\begin_inset Formula $n_{G}$
+\end_inset
+
+ the number of generations and 
+\begin_inset Formula $T_{sim}$
+\end_inset
+
+ the time for each simulation.
+ In the mentioned case, the size of the simulation included 8 individuals
+ and 7 generations.
+ A computer with the power of 2.8 GHz CPU and 32 GB RAM was used.
+\end_layout
+
+\begin_layout Standard
+For the simulation for fuel cell each simulation lasted in 1 minute and
+ 45 seconds.
+ The total calculation time yielded about 2 hours.
+ 
+\end_layout
+
 \end_body
 \end_document
