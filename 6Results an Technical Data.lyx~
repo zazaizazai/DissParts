@@ -369,7 +369,7 @@ Results for the reverberation chamber
 \end_layout
 
 \begin_layout Subsection
-Performance of the optimized stirrer geometry
+Result of the optimized stirrer geometry
 \end_layout
 
 \begin_layout Standard
@@ -2174,8 +2174,68 @@ The
  relevant parameters.
 \end_layout
 
+\begin_layout Standard
+\align left
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/optstirrer.png
+	lyxscale 50
+	scale 40
+	BoundingBox 0bp 0bp 540bp 425bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:simulation_OptSitrrer1"
+
+\end_inset
+
+The shape of the optimized stirrer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:simulation_OptSitrrer1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the resulting geometry calculated by genetic algorithms.
+\end_layout
+
 \begin_layout Subsection
-Performance of the optimized shape for three stirrers
+Result of the optimized shape for three stirrers
 \end_layout
 
 \begin_layout Standard
@@ -6330,7 +6390,7 @@ reference "tab:P-value_3OPt"
 \end_layout
 
 \begin_layout Subsection
-Performance for using different built-in objects geometries in ERC
+Result for using different built-in objects geometries in ERC
 \end_layout
 
 \begin_layout Standard
@@ -6350,10 +6410,7 @@ noprefix "false"
 
  represent the electric field distribution for the model with half spheres
  in all three directions.
-\end_layout
-
-\begin_layout Standard
-\align left
+ 
 \begin_inset Float figure
 placement H
 wide false
@@ -6362,7 +6419,7 @@ status open
 
 \begin_layout Plain Layout
 \noindent
-\align center
+\align left
 \begin_inset Graphics
 	filename images/SphereXdirection.pdf
 	lyxscale 50
@@ -6442,10 +6499,7 @@ noprefix "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\align left
+ 
 \begin_inset Float figure
 placement H
 wide false
@@ -6453,7 +6507,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
+\noindent
+\align left
 \begin_inset Graphics
 	filename images/ConeXdirection.pdf
 	lyxscale 50
@@ -6484,7 +6539,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -6516,10 +6570,6 @@ noprefix "false"
 \end_inset
 
  and given for both real and imaginary parts of the field.
-\end_layout
-
-\begin_layout Standard
-\align left
 \begin_inset Float table
 placement H
 wide false
@@ -7291,13 +7341,24 @@ where
  In the mentioned case, the size of the simulation included 8 individuals
  and 7 generations.
  A computer with the power of 2.8 GHz CPU and 32 GB RAM was used.
-\end_layout
-
-\begin_layout Standard
-For the simulation for fuel cell each simulation lasted in 1 minute and
+ For the simulation for fuel cell each simulation lasted in 1 minute and
  45 seconds.
  The total calculation time yielded about 2 hours.
- 
+ The opimization simulation of the optimized stirrer geometry and the performanc
+e to optimized the shape of three stirrer yielded about 
+\begin_inset Formula $70$
+\end_inset
+
+ hours.
+ The size of the simulation included 
+\begin_inset Formula $18$
+\end_inset
+
+ individuals and 
+\begin_inset Formula $7$
+\end_inset
+
+ generations.
 \end_layout
 
 \end_body
