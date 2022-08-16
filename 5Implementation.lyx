@@ -3761,10 +3761,10 @@ and
 
  which correspond to the distance of the wing edges from the boundary of
  the stirrer length 
-\begin_inset Formula $St_{L}=0$
+\begin_inset Formula $St_{L}$
 \end_inset
 
- mm.
+.
  
 \end_layout
 
