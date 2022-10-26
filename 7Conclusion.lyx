@@ -4,96 +4,13 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass elsarticle
-\begin_preamble
-%%
-%% Copyright 2007, 2008, 2009 Elsevier Ltd
-%%
-%% This file is part of the 'Elsarticle Bundle'.
-%% ---------------------------------------------
-%%
-%% It may be distributed under the conditions of the LaTeX Project Public
-%% License, either version 1.2 of this license or (at your option) any
-%% later version.  The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.2 or later is part of all distributions of LaTeX
-%% version 1999/12/01 or later.
-%%
-%% The list of all files belonging to the 'Elsarticle Bundle' is
-%% given in the file `manifest.txt'.
-%%
-
-%% Template article for Elsevier's document class `elsarticle'
-%% with numbered style bibliographic references
-%% SP 2008/03/01
-%%
-%%
-%%
-%% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
-%%
-%%
-
-
-%% Use the option review to obtain double line spacing
-%% \documentclass[preprint,review,12pt]{elsarticle}
-
-%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
-%% for a journal layout:
-%% \documentclass[final,1p,times]{elsarticle}
-%% \documentclass[final,1p,times,twocolumn]{elsarticle}
-%% \documentclass[final,3p,times]{elsarticle}
-%% \documentclass[final,3p,times,twocolumn]{elsarticle}
-%% \documentclass[final,5p,times]{elsarticle}
-%% \documentclass[final,5p,times,twocolumn]{elsarticle}
-
-%% if you use PostScript figures in your article
-%% use the graphics package for simple commands
-%% \usepackage{graphics}
-%% or use the graphicx package for more complicated commands
-%% \usepackage{graphicx}
-%% or use the epsfig package if you prefer to use the old commands
-%% \usepackage{epsfig}
-
-%% The amssymb package provides various useful mathematical symbols
-%% The amsthm package provides extended theorem environments
-%% \usepackage{amsthm}
-
-%% The lineno packages adds line numbers. Start line numbering with
-%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
-%% for the whole article with \linenumbers after \end{frontmatter}.
-%% \usepackage{lineno}
-
-%% natbib.sty is loaded by default. However, natbib options can be
-%% provided with \biboptions{...} command. Following options are
-%% valid:
-
-%%   round  -  round parentheses are used (default)
-%%   square -  square brackets are used   [option]
-%%   curly  -  curly braces are used      {option}
-%%   angle  -  angle brackets are used    <option>
-%%   semicolon  -  multiple citations separated by semi-colon
-%%   colon  - same as semicolon, an earlier confusion
-%%   comma  -  separated by comma
-%%   numbers-  selects numerical citations
-%%   super  -  numerical citations as superscripts
-%%   sort   -  sorts multiple citations according to order in ref. list
-%%   sort&compress   -  like sort, but also compresses numerical citations
-%%   compress - compresses without sorting
-%%
-%% \biboptions{comma,round}
-
-% \biboptions{}
-
-
-%\journal{Nuclear Physics B}
-\end_preamble
-\options preprint,3p
+\textclass article
 \use_default_options true
 \maintain_unincluded_children false
 \language english
-\language_package none
+\language_package default
 \inputencoding auto
-\fontencoding default
+\fontencoding global
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -111,30 +28,28 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 12
-\spacing single
+\paperfontsize default
 \use_hyperref false
 \papersize default
 \use_geometry false
 \use_package amsmath 1
-\use_package amssymb 2
-\use_package cancel 0
+\use_package amssymb 1
+\use_package cancel 1
 \use_package esint 1
-\use_package mathdots 0
-\use_package mathtools 0
-\use_package mhchem 0
-\use_package stackrel 0
-\use_package stmaryrd 0
-\use_package undertilde 0
-\cite_engine natbib
-\cite_engine_type authoryear
-\biblio_style plain
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
 \justification true
-\use_refstyle 0
+\use_refstyle 1
 \use_minted 0
 \index Index
 \shortcut idx
@@ -165,48 +80,56 @@ Conclusion and Outlook
 \end_layout
 
 \begin_layout Standard
-Starting with the optimization of the fuel cell, it is evident that a desired
- power density curve can be approximated very well by adjusting the parameters
- through the optimization.
- Interestingly, different parameter settings also lead to the same power-density
- graph.
- This means that the solution is not clear here, which in turn could be
+The optimization of the fuel cell shows that a desired power density curve
+ can be approximated very well using genetic algorithms.
+ Interestingly, GA reveals a non-obvious structure of fuel cell performance,
+ where different parameter settings lead to the same power density curve.
+ This means that the solution is not unique here, which in turn could be
  used for a specific desired parameter setting.
- For further investigations it would be important to include the temperature
- generated by the operation in the simulations, which was choosen as constant
- for this work.
- The effect of this temperature on performance is desirable.
+ For further investigations, it would be important to include or couple
+ the temperature generated by the operation in the simulations, which for
+ the sake of simplicity was chosen as constant for this work.
+ Knowledge of the effect of this temperature on performance is desirable.
 \end_layout
 
 \begin_layout Standard
-Next was the achievement of a Statistically uniform and isotropic field
- studied in an electromagnetic reverbration cuboid chamber, with a Vivaldi
+Next was the achievement of a statistically uniform and isotropic field
+ studied in an electromagnetic reverberation cuboid chamber, with a Vivaldi
  antenna as source.
- The field turbulence was provided by a stirrer whose geometry plays a crucial
- role in field distribution.
- In this work, the shape of the stirrer wings were optimized to achieve
- the best possible field distribution.
+ The field turbulence was caused by a stirrer whose geometry plays a crucial
+ role in the field distribution.
+ In this work, the shape of the stirrer blades was optimized in order to
+ achieve the best possible desired field distribution.
  This enabled the desired values to be achieved except for the real part
  of the field in the y-direction.
  In order to further improve the field distribution values, the number of
  stirrers was increased to three pieces.
- The wing shapes have also been optimized here.
+ The wing shapes have been optimized.
  The field in the y-direction could be improved, but the field values in
- the other spatial directions deteriorated.
- Despite this fact, in all spatial directions, the desired acceptance limits
- for the field distribution was observed.
- Next, a certain number of two different geometric objects (cone and sphere)
- were attached to the wall chamber and their influence on the field distribution
- was examined.
- Here the hemispheres provided a better field distribution than cones.
- Here the hemispheres provided a better field distribution than cones, so
- this would be a better choice for further investigation.
+ the other spatial directions deteriorated but remained within the tolerance
+ range.
+ Nevertheless, the desired acceptance limits for the field distribution
+ in all spatial directions were maintained.
  For further investigations it would also be interesting to optimize the
  topology of the stirrer.
  To do this, one does not assume a rectangular sheet metal as the basic
  shape of a stirrer, but calculates the optimal shape completely mathematically.
- Studying other geometric objects and their shape and number that could
- be placed on the wall of the chamber would also be of scientific importance.
+ In a further step, a different approach to improve the field distribution
+ was chosen.
+ There for a certain number of two different geometric objects (cone and
+ sphere) were attached to the wall chamber and their influence on the field
+ distribution was examined.
+ Here the hemispheres provided a better field distribution than cones, so
+ this would be a better choice for further investigation.
+ Here, the hemispheres provided a better field distribution than the cones,
+ so the hemisphere was used for further investigations.
+ Now an attempt was made to vary the number of hemispheres randomly on the
+ wall in the chamber, but unfortunately this did not lead to a better distributi
+on of the field.
+ For further investigation, one should perhaps not make a random change
+ in the number of geometric objects, but a systematic change.
+ The influence of multiple hemispheres with different randomly chosen radii
+ in chamber would be an interesting research project.
 \end_layout
 
 \end_body

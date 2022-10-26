@@ -308,9 +308,6 @@
   doi     = {10.1109/MEMC.2017.7931986},
 }
 
-@Article{,
-}
-
 @article{article,
 author = {Zhao, Huapeng},
 year = {2013},
@@ -320,6 +317,53 @@ title = {MLFMM-Accelerated Integral-Equation Modeling of Reverberation Chambers 
 volume = {55},
 journal = {Antennas and Propagation Magazine, IEEE},
 doi = {10.1109/MAP.2013.6735541}
+}
+
+@Manual{Wo:2020,
+  title   = {Systemidentifikation},
+  address = {Universität Padeborn},
+  author  = {Wallscheid, O.},
+  note    = {Skriptum zur Vorlesung},
+  year    = {2020},
+}
+
+@Book{Beucher2011,
+  author    = {Beucher, Ottmar},
+  publisher = {Springer-Verlag},
+  title     = {Signale und Systeme: Theorie, Simulation, Anwendung - Eine beispielorientierte Einführung mit MATLAB},
+  year      = {2011},
+  address   = {Berlin Heidelberg New York},
+  isbn      = {978-3-642-20294-0},
+}
+
+@Article{kristinsson1992system,
+  author    = {Kristinsson, Kristinn and Dumont, Guy Albert},
+  journal   = {IEEE Transactions on Systems, Man, and Cybernetics},
+  title     = {System identification and control using genetic algorithms},
+  year      = {1992},
+  number    = {5},
+  pages     = {1033--1046},
+  volume    = {22},
+  publisher = {IEEE},
+}
+
+@InProceedings{duong2002system,
+  author       = {Duong, Vu and Stubberud, Allen R},
+  booktitle    = {Proceedings, IEEE Aerospace Conference},
+  title        = {System identification by genetic algorithm},
+  year         = {2002},
+  organization = {IEEE},
+  pages        = {5--5},
+  volume       = {5},
+}
+
+@Book{Levine2010,
+  author    = {Levine, William S.},
+  publisher = {Taylor & Francis},
+  title     = {The Control Handbook, Second Edition (three volume set)},
+  year      = {2010},
+  address   = {Justus-Liebig-Universität Gießen},
+  isbn      = {978-1-420-07366-9},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

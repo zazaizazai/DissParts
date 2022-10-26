@@ -6394,23 +6394,612 @@ Result for using different built-in objects in ERC
 \end_layout
 
 \begin_layout Standard
+The objective function that is used is the Shapiro-Wilk-Test value P for
+ the real and imaginary average electric field in each of the three directions
+ in terms of the different parameters
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{P}=\sqrt{\overset{6}{\underset{i=1}{\sum}}\left|P_{i}\left(\delta_{1}G_{1},\delta_{2}G_{2},...,\delta_{40}G_{40}\right)-1\right|^{2}}\rightarrow\mathrm{min}.
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta_{i}$
+\end_inset
+
+ is an element of a solution space in GA with the value of 
+\begin_inset Formula $0$
+\end_inset
+
+ or 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $G_{i}$
+\end_inset
+
+ is the specific geometrical object in position 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \align left
-Following several simulations and evaluations, the subsequent distributions
- of the average electric field for both geometries were produced.
- Fig.
- 
+Table 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:simulation_kugel-1"
+reference "tab:model_param"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- represent the electric field distribution for the model with half spheres
- in all three directions.
+ provides the solution range of the parameters considered for the simulation
+ with genetical algorithms.
+ The 
+\begin_inset Formula $x$
+\end_inset
+
+ values corresponds to the half spheres where the values 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $0$
+\end_inset
+
+ establish whether the geometric object will be switched on or off, meaning
+ that either the half sphere in the given position will be present or erased
+ and, thus, contributing to a different field distribution.
+ The second row supplies 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $Rot$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+that establishes the positions of the stirrer for a full 
+\begin_inset Formula $360$
+\end_inset
+
+ degrees rotation from 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+the simulation in COMSOL Multiphysics.
+ In this case the angular jump corresponds to the number of steps taken
+ by the stirrer.
+ 
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:model_param"
+
+\end_inset
+
+Model parameters for the genetic algorithms and COMSOL Multiphysics simulation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="9">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbol
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Range
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[\begin{array}{cc}
+0 & 1\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $40$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+integer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+half spheres
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $Rot$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[\begin{array}{cc}
+0 & 360\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $60$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+degrees
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+rotation positions
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/FitnessKugelNew.pdf
+	lyxscale 50
+	scale 40
+	BoundingBox 0bp 0bp 595bp 425bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:KugelOptNew"
+
+\end_inset
+
+ Fitness value of the chosen population size of 20 individuals and 10 generation
+s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+The ERC with half spheres was simulated for 9 different measurement points
+ inside the chamber and 60 stirrer positions.
+ The histograms on Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:simulation_kugel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ present the average electric field distribution in all directions for real
+ and imaginary parts.
 \begin_inset Float figure
 placement H
 wide false
@@ -6455,11 +7044,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:simulation_kugel-1"
+name "fig:simulation_kugel"
 
 \end_inset
 
-Distribution of the average electric field for half spheres
+Distribution of the average electric field
 \end_layout
 
 \end_inset
@@ -6469,107 +7058,17 @@ Distribution of the average electric field for half spheres
 
 \end_inset
 
-Subsequently, the electric field distribution for the reverberation chamber
- with the cones was simulated and represented in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:simulation_kegel-1"
-plural "false"
-caps "false"
-noprefix "false"
 
-\end_inset
+\end_layout
 
-.
- This distribution is, as well, shown for all three directions and for both
- real and imaginary part.
- All figures already serve to portray the difference between the two models.
- At first sight, one can so far determine that the distribution observed
- for figures relating to the half spheres end up fulfilling expectations
- more so than those of the cones.
- These observations are further proven true in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:P-value_both"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- 
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
+\begin_layout Standard
 \align left
-\begin_inset Graphics
-	filename images/ConeXdirection.pdf
-	lyxscale 50
-	scale 28
-	BoundingBox 0bp 0bp 540bp 425bp
-
+Resulting from these electric field distributions, the following 
+\begin_inset Formula $P$
 \end_inset
 
-
-\begin_inset Graphics
-	filename images/ConeYdirection.pdf
-	lyxscale 50
-	scale 28
-	BoundingBox 0bp 0bp 540bp 425bp
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/ConeZdirection.pdf
-	lyxscale 50
-	scale 28
-	BoundingBox 0bp 0bp 540bp 425bp
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:simulation_kegel-1"
-
-\end_inset
-
-Distribution of the average electric field for cones
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-The resulting P-values achieved by both models are listed below in Table
+-values were determined.
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:P-value_both"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and given for both real and imaginary parts of the field.
 \begin_inset Float table
 placement H
 wide false
@@ -6582,7 +7081,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:P-value_both"
+name "tab:P-value_kugel"
 
 \end_inset
 
@@ -6597,35 +7096,15 @@ Resulting P-values of the simulation
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="7">
+<lyxtabular version="3" rows="9" columns="5">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
 <row>
 <cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -6712,25 +7191,7 @@ Direction
 \begin_inset Text
 
 \begin_layout Plain Layout
-P-value of Half Sphere
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-P-value of Cone
+P-value
 \end_layout
 
 \end_inset
@@ -6780,28 +7241,7 @@ Real Part
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.0024$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $3.4875\times10^{-4}$
+\begin_inset Formula $0.4190$
 \end_inset
 
 
@@ -6854,28 +7294,7 @@ Real Part
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.0513$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.6074\times10^{-4}$
+\begin_inset Formula $0.0182$
 \end_inset
 
 
@@ -6928,28 +7347,7 @@ Real Part
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $6.2473\times10^{-6}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.7340\times10^{-5}$
+\begin_inset Formula $0.6332$
 \end_inset
 
 
@@ -6959,24 +7357,6 @@ Real Part
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -7067,28 +7447,7 @@ Imaginary Part
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.0893$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.0294$
+\begin_inset Formula $0.0054$
 \end_inset
 
 
@@ -7154,41 +7513,7 @@ Imaginary Part
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $0.2413$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $9.0150\times10^{-4}$
+\begin_inset Formula $0.5151$
 \end_inset
 
 
@@ -7241,28 +7566,7 @@ Imaginary Part
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.0095$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.0085$
+\begin_inset Formula $0.7989$
 \end_inset
 
 
@@ -7280,19 +7584,16 @@ Imaginary Part
 
 \end_inset
 
-The P-values serve to emphasize the contrast of both geometries and, thus,
- help in the choice of a better suited geometry for the ERC.
- The P-values calculated for the half spheres are remarkably better than
- those of the cones as half of them succeed the previously established desired
- goal of at least 
-\begin_inset Formula $5$
-\end_inset
-
-%, whereas none of the values of the cone simulation come even close to
- approaching the needed standard.
- Nevertheless, the P-values are still not perfect and need to be optimized
- further.
- 
+The P-values from the simulation with the optimized chamber geometry containing
+ half spheres have improved when compared to the previous simulation but
+ the desired goal has not been reached for all P-values.
+ Further simulations are needed to first prove reproducibility and, furthermore,
+ refine the required population size and generations for the genetic algorithms
+ or the stirrer rotation degrees.
+ Moreover, a more important quantity influencing the improvement of the
+ P-values and that should be further honed is the frequency.
+ (These improved simulation will be done these two weeks and the results
+ updated with the improved P-values.)
 \end_layout
 
 \begin_layout Section
@@ -7359,6 +7660,18 @@ e to optimized the shape of three stirrer yielded about
 \end_inset
 
  generations.
+ For the simulation of using different built-in objects in ERC there was
+ used 
+\begin_inset Formula $40$
+\end_inset
+
+ individuals and 
+\begin_inset Formula $10$
+\end_inset
+
+ generation and the simulation time was about 2 Weeks.
+ For this simulation in futur work is the parallization of the calculation
+ required
 \end_layout
 
 \end_body

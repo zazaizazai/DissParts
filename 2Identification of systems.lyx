@@ -161,7 +161,166 @@
 \begin_body
 
 \begin_layout Part
-System identification and inverse identification
+System and Parameter Identification through Optimization
+\end_layout
+
+\begin_layout Section
+Explanation of terms
+\end_layout
+
+\begin_layout Standard
+The term system identification describes methods and algorithms that generate
+ an empirical model of the system from measured input and output signals.
+ System identification thus represents a sub-discipline of systems theory
+ in engineering 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wo:2020"
+literal "false"
+
+\end_inset
+
+.
+ The identification involves structure realization and parameter identification.
+ For structure realization a priori knowledge is used to determine a class
+ of model.
+ If there is no a priori knowledge there, then the structure realization
+ might be done by a trial and error method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Levine2010"
+literal "false"
+
+\end_inset
+
+.
+ .After the structure identification, the main focus is on the parameter
+ identification in the system.
+ Parameter identification is performed by adjusting parameters within a
+ given model until its output, for a particular input, coincides as well
+ as possible with the measured output of the system being identified for
+ the same input 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duong2002system"
+literal "false"
+
+\end_inset
+
+.
+ For this a desired output function 
+\begin_inset Formula $\hat{Y}_{U_{i}}$
+\end_inset
+
+dependet of diferent set of input function 
+\begin_inset Formula $U_{i}$
+\end_inset
+
+ and a system simulated function 
+\begin_inset Formula $Y_{U_{i}}($
+\end_inset
+
+k) on a set of system parameters 
+\begin_inset Formula $k$
+\end_inset
+
+ are given.
+ 
+\end_layout
+
+\begin_layout Standard
+The difference build the cost function 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F_{P}=\sqrt{\overset{}{\underset{i}{\sum}}\left|Y_{U_{i}}(k)-\hat{Y_{U_{i}}}\right|^{2}}\rightarrow\mathrm{min}.
+\end{equation}
+
+\end_inset
+
+wich is to be minimized.
+ The minimization of the cost function serves to identify the parameter
+ set 
+\begin_inset Formula $k$
+\end_inset
+
+ sought.
+\end_layout
+
+\begin_layout Section
+Different model categories
+\end_layout
+
+\begin_layout Standard
+In practice, a distinction is made between a black box model and a white
+ box model in a system.
+ A black box model is based on a model where one has no knowledge of the
+ internal structure of the system.
+ These are often statistical models and with the help of a lot of data,
+ another model is constructed outside of the system that tries to describe
+ the actual system as well as possible.
+ Accordingly, it is difficult to identify the influencing parameters for
+ this type of system.
+ A typical black box model would be customer shopping behavior where the
+ brain is viewed as a black box and one tries to mimic this with lots of
+ data.
+\end_layout
+
+\begin_layout Standard
+At the other extreme is the white box model, where you know the inner workings
+ of the system.
+ The behavior of these systems is based on an interaction of known and researche
+d physical phenomena with a known of influencing parameters and it can be
+ described analytically.
+ However, a mixture of these systems is found, referred to as the gray box
+ model.
+ There you have partial information about the behavior of the system, but
+ there is also space for the exact unpredictability of the system.
+ The cause can be a statistical behavior of the system as well as a complex
+ physical interaction within it.
+ In this work, two such systems are considered, whereby on the one hand
+ the interaction of physical processes and on the other hand the statistical
+ behavior of the selected system make a gray box out of these systems.
+\end_layout
+
+\begin_layout Section
+Selection of optimization algorithms
+\end_layout
+
+\begin_layout Standard
+There are a lot of methods have been used to to optimize a system, matematicly
+ that means to minimize the cost function, and most of this methods are
+ based on statistical or on gradient decent method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duong2002system"
+literal "false"
+
+\end_inset
+
+.
+ Statistical methods require information like knowledge about properties
+ of a system, wich are sometimes not available.
+ The gradient descent methods are local minimization methods, wich require
+ a smooth search space.
+ They are often unable to find the global optima, when the solution space
+ is multimodal with high order.
+ In this work is for optimization the genetic algorithms choosen.
+ The advantage of genetic algorithms is the simple implementation, it requires
+ less knowledge os system properties and it is a global searching technique.
+ The disadvantage is sometime the running time for small problems mostly
+ computationally intensive.
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibtex-daten/bachelorarbeit-info"
+options "bibtex-daten/unsrtdin"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
